@@ -76,15 +76,15 @@ DB: Oracle
 ## 6. 화면 구성
 
 #### 1. 로그인
-![image](https://user-images.githubusercontent.com/98327681/184592075-ce449443-0a87-4084-a96c-28c17f5c753c.png)
+![image](https://user-images.githubusercontent.com/98327681/184667196-8d48ee3c-2a57-4318-a2c2-4a0064aecf48.png)
 
 
 #### 2. 회원가입
-![image](https://user-images.githubusercontent.com/98327681/184592084-d6734021-4833-495b-b08a-a3f607afd112.png)
+![image](https://user-images.githubusercontent.com/98327681/184667286-aa5f9f1b-5a86-4e67-af3e-53672fa9328d.png)
 
 
 #### 3. 회원정보
-![image](https://user-images.githubusercontent.com/98327681/184592102-2247ced8-b256-4687-b77e-4008da798db8.png)
+![image](https://user-images.githubusercontent.com/98327681/184667343-304ecafc-e1f9-47c3-92f6-cd179a59f5e7.png)
 
 
 #### 4. 글목록
@@ -92,10 +92,10 @@ DB: Oracle
 
 
 #### 5. 글상세
-![image](https://user-images.githubusercontent.com/98327681/184592134-aab1665c-f5fe-4728-9968-ba95931c2251.png)
+![image](https://user-images.githubusercontent.com/98327681/184667396-787e84a4-df68-4fdc-9d4d-e405027452c9.png)
 
 
 #### 6. 글등록
-![image](https://user-images.githubusercontent.com/98327681/184592152-c4a550e9-3843-48c7-b3f3-519395c9503d.png)
+![image](https://user-images.githubusercontent.com/98327681/184667437-9f8ce05a-c84d-4aa5-b68f-a3e6ef6d0303.png)
 
 
