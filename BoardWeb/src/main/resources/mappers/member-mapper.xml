@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "..//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MemberDAO">
+	<resultMap type="member" id="memberResult">
+		<result property="id" column="member_id"/>
+		<result property="password" column="password"/>
+		<result property="name" column="name"/>
+		<result property="email" column="email"/>
+		<result property="createDate" column="create_date"/>
+		<result property="updateDate" column="update_date"/>
+	</resultMap>
+	
+	<!-- member 테이블에서 id가 같고 password가 같은 행 select (login시 사용) -->
+	<select id="login" resultMap="memberResult">
+		<![CDATA[
+		select * from member where member_id=#{id} and password=#{password}
+		]]>
+	</select>
+
+	<!-- member 테이블에 행 insert -->
+	<insert id="insert">		
+		<![CDATA[
+		insert into member(member_id, password, name, email) 
+		values(#{id}, #{password}, #{name}, #{email})
+		]]>
+	</insert>
+
+	<!-- member 테이블에서 id가 같고 password가 같은 행 update -->
+	<update id="update">
+		<![CDATA[
+		update member set password=#{password}, name=#{name}, email=#{email}, update_date=sysdate
+		where member_id=#{id} and password=#{password}
+		]]>
+	</update>
+	
+	<!-- member 테이블에서 id가 같고 password가 같은 행 delete -->
+	<delete id="delete">
+		<![CDATA[
+		delete from member where member_id=#{id} and password=#{password}
+		]]>
+	</delete>
+	
+	<!-- member 테이블에서 id가 같은 행 select (id로 멤버 조회용) -->
+	<select id="getMember" resultMap="memberResult">
+		<![CDATA[
+		select * from member where member_id=#{id}
+		]]>
+	</select>
+	
+	<!-- member 테이블에서 모든 member select (아직 미사용) -->
+	<select id="getMemberList" resultMap="memberResult">
+		<![CDATA[
+		select * from member order by create_date desc
+		]]>
+	</select>
+</mapper>					

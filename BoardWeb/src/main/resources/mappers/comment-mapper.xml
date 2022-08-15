@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "..//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CommentDAO">
+	<resultMap type="comment" id="commentResult">
+		<result property="id" column="comment_id"/>
+		<result property="boardId" column="board_id"/>
+		<result property="writer" column="writer"/>
+		<result property="comment" column="comments"/>
+		<result property="createDate" column="create_date"/>
+		<result property="updateDate" column="update_date"/>
+	</resultMap>
+	
+
+	<!-- comment 테이블에 행 insert -->
+	<insert id="insert">		
+		<![CDATA[
+		insert into comments(comment_id, board_id, writer, comments) 
+		values(comment_seq.nextval, #{boardId}, #{writer}, #{comment})
+		]]>
+	</insert>
+
+	<!-- comment 테이블에서 id가 같고 password가 같은 행 update -->
+	<update id="update">
+		<![CDATA[
+		update comments set comments=#{comment}, update_date=sysdate
+		where comment_id=#{id}
+		]]>
+	</update>
+	
+	<!-- comment 테이블에서 id가 같고 password가 같은 행 delete -->
+	<delete id="delete">
+		<![CDATA[
+		delete from comments where comment_id=#{id}
+		]]>
+	</delete>
+	
+	<!-- comment 테이블에서 id가 같은 행 select (id로 멤버 조회용) -->
+	<select id="getComment" resultMap="commentResult">
+		<![CDATA[
+		select * from comments where comment_id=#{id}
+		]]>
+	</select>
+	
+	<!-- comment 테이블에서 모든 comment select (아직 미사용) -->
+	<select id="getCommentList" resultMap="commentResult">
+		<![CDATA[
+		select * from comments where board_id=#{boardId} order by create_date desc
+		]]>
+	</select>
+</mapper>					
