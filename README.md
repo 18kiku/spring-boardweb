@@ -12,17 +12,17 @@
 + 로그인
 + 회원 가입
 + 회원 정보 수정
-+ + 회원 탈퇴
++ 회원 탈퇴
 + 게시판 이용
 + 댓글 기능
 + 페이징
 
 ## 3. 개발 환경
 ```
-+ OS: Windows 10
-+ Java Version: Java SE-1.8 (jre1.8.0_321)
-+ IDE: spring-tool-suite-3.9.15.RELEASE-34.16.0
-+ DB: Oracle
+OS: Windows 10
+Java Version: Java SE-1.8 (jre1.8.0_321)
+IDE: spring-tool-suite-3.9.15.RELEASE-34.16.0
+DB: Oracle
 ```
 
 
@@ -116,4 +116,5 @@
 
 #### 6. 글등록
 ![image](https://user-images.githubusercontent.com/98327681/184592152-c4a550e9-3843-48c7-b3f3-519395c9503d.png)
+
 
