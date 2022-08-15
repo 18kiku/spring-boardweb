@@ -64,33 +64,14 @@ DB: Oracle
 
 ## 5. 테이블 정의
 
-테이블ID	BOARD			
-순번	컬럼명	타입 및 길이	NULL	PK	FK
-1	BOARD_ID	NUMBER	Not Null	Y	　
-2	WRITER	VARCHAR2(30)	Not Null	　	Y
-3	TITLE	VARCHAR2(100)	Not Null	　	　
-4	CONTENT	CLOB	Not Null	　	　
-5	CNT	NUMBER	Null	　	　
-6	CREATE_DATE	TIMESTAMP(6)	Null	　	　
-7	UPDATE_DATE	TIMESTAMP(6)	Null	　	　
+![member](https://user-images.githubusercontent.com/98327681/184666810-493f930f-42fd-47c2-bbc1-2c6f07a479fc.PNG)
 
-테이블ID	COMMENTS			
-순번	컬럼ID	타입 및 길이	NULL	PK	FK
-1	COMMENT_ID	NUMBER	Not Null	Y	　
-2	BOARD_ID	NUMBER	Not Null	　	Y
-3	WRITER	VARCHAR2(30)	Not Null	　	Y
-4	COMMENTS	CLOB	Not Null	　	　
-5	CREATE_DATE	TIMESTAMP(6)	Null	　	　
-6	UPDATE_DATE	TIMESTAMP(6)	Null	　	　
 
-테이블ID	MEMBER			
-순번	컬럼ID	타입 및 길이	NULL	PK	FK
-1	MEMBER_ID	VARCHAR2(30)	Not Null	Y	　
-2	PASSWORD	VARCHAR2(30)	Not Null	　	　
-3	NAME	VARCHAR2(30)	Not Null	　	　
-4	EMAIL	VARCHAR2(50)	Not Null	　	　
-5	CREATE_DATE	TIMESTAMP(6)	Null	　	　
-6	UPDATE_DATE	TIMESTAMP(6)	Null	　	　
+![board](https://user-images.githubusercontent.com/98327681/184666742-01df5902-1053-431c-bb68-bf0c420bdcde.PNG)
+
+![comments](https://user-images.githubusercontent.com/98327681/184666826-6981e883-c43d-46e4-82c6-3836648a88d4.PNG)
+
+
 
 ## 6. 화면 구성
 
